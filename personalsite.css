@@ -13,10 +13,11 @@
 }
 .masthead-heading {
     margin-top: -0.2em;
-}    
-h1#intro {
+}
+.intro {
     text-align: left;
     margin-left: 10%;
+    width: 33%;
 }
 h1#whereiamfrom {
     margin-left: 35%;
@@ -24,10 +25,7 @@ h1#whereiamfrom {
 h1#moreaboutme {
     margin-left: 60%;
 }
-p#intro {
-    margin-left: 10%;
-    width: 33%;
-}
+
 p#whereiamfrom {
     width: 33%;
     margin-left: 35%
