@@ -2,10 +2,11 @@
     padding: 6em 0;
     text-align: center;
     color: white;
-    background-image: url("unsplash-photo-1428959249159-5706303ea703.jpeg");
+    background-image: url("https://unsplash.imgix.net/photo-1428959249159-5706303ea703?q=75&fm=jpg&w=1080&fit=max&s=010f7f99e23ad5623bca2ba525c7f9f3");
     background-position: center;
     background-size: cover;
     border-top: 1em solid black;
+    border-radius: 20px;
 }
 .masthead-intro {
     margin-bottom: 0.1em;
