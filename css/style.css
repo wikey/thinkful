@@ -4,3 +4,39 @@ body {
 div {
     border: 1px solid Chocolate;
 }
+header {
+    max-height: min-content;
+    width: 100%;
+    background-color: white;
+    border: 1px solid blue;
+    position: absolute;
+    top: 0;
+    left: 0;    
+}
+header img {
+    max-height: 2.5em;
+    margin-top: .8em;
+    margin-bottom: .8em;
+    margin-left: 2.55em;
+}
+header nav {
+    position: relative;
+    top: -4em;
+    right: -4em;
+}
+header ul {
+}
+header li {
+    display: inline;
+}
+header a {
+    color: grey;
+    text-decoration: none;
+    padding-left: 2em;
+
+}
+
+li#meetkarma {
+    color: black;
+    font-weight: bold;
+}
