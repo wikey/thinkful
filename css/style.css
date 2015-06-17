@@ -1,33 +1,75 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+		 box-sizing: inherit;
+	     }
+
 body {
     background-color: LightGray;
+    margin:0;
+    padding:0;
+    font-size: 16px; 
+    letter-spacing: 0.03em;
 }
 div {
     border: 1px solid Chocolate;
+
 }
-header {
+
+/* Navigation Section */
+.top-navigation {
+    background-color: #fff;
+
+}
+.content {
+    width: 60rem;
+    height: 4.375rem;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+.content a {
+    text-decoration: none;
+    color: #838994;
+}
+.top-navigation .links {
+    float: right;
+}
+.top-navigation .links > .active {
+    font-weight: 600;
+}
+.top-navigation li {
+    display: inline-block;
+    margin: 0px 15px;
+}
+
+
+nav img {
+    max-height: 2.5em;
+    margin-top: .8em;
+    margin-bottom: .8em;
+/*    margin-left: 2.55em;*/
+}
+
+/* Bits from challenge attempt*/
+/*header {
+    display: inline-block;
     max-height: min-content;
     width: 100%;
     background-color: white;
     border: 1px solid blue;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;    
 }
-header img {
-    max-height: 2.5em;
-    margin-top: .8em;
-    margin-bottom: .8em;
-    margin-left: 2.55em;
-}
 header nav {
-    position: relative;
-    top: -4em;
-    right: -4em;
+    float: right
 }
 header ul {
 }
 header li {
-    display: inline;
+    display: inline-block;
 }
 header a {
     color: grey;
@@ -40,3 +82,25 @@ li#meetkarma {
     color: black;
     font-weight: bold;
 }
+div#notslider {
+    position: relative;
+    top: 40em;
+    width: 100%;
+    min-height: fit-content;
+    background-image: url("https://thinkful-ed.github.io/karma-clone/img/first-background.jpg");
+}
+div#notslidertext {
+    max-width: 66%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: green;
+}
+div#notslider h1 {
+}
+div#notslider h2 {
+}
+div#notslider p {
+}
+div#notsliderbutton {
+}
+*/
