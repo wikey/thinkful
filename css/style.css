@@ -28,6 +28,7 @@ div {
     height: 4.375rem;
     margin: 0 auto;
     padding: 0px 15px;
+    
 }
 .content a {
     text-decoration: none;
@@ -51,6 +52,38 @@ nav img {
     margin-bottom: .8em;
 /*    margin-left: 2.55em;*/
 }
+
+div#notslider {
+    width: 100%;
+    min-height: 600px;
+    background-image: url("https://thinkful-ed.github.io/karma-clone/img/first-background.jpg");
+    background-size: cover;
+    color: white;
+}
+div#notslidertext {
+    max-width: 66%;
+    margin-top: 10em;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: green;
+    text-align: center;
+}
+div#notslider h1 {
+    font-size: 35pt;
+}
+div#notslider h2 {
+    font-size: 20pt;
+}
+div#notslider p {
+    font-weight: bold;
+}
+div#notsliderbutton {
+    max-width: 30%;
+    margin: auto;
+    background: #3498db;
+    border-radius: 8px;
+}
+
 
 /* Bits from challenge attempt*/
 /*header {
@@ -81,26 +114,5 @@ header a {
 li#meetkarma {
     color: black;
     font-weight: bold;
-}
-div#notslider {
-    position: relative;
-    top: 40em;
-    width: 100%;
-    min-height: fit-content;
-    background-image: url("https://thinkful-ed.github.io/karma-clone/img/first-background.jpg");
-}
-div#notslidertext {
-    max-width: 66%;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: green;
-}
-div#notslider h1 {
-}
-div#notslider h2 {
-}
-div#notslider p {
-}
-div#notsliderbutton {
 }
 */
