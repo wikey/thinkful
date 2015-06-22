@@ -1,0 +1,19 @@
+#wrapper {
+    width: 40em;
+    padding: 20px;
+    color: green;
+    font-family: arial;
+    background-color: blue;
+}
+h1 {
+    font-size: 3em;
+    text-align: center;
+}
+p {
+    padding: 15px;
+    background-color: grey;
+    text-align: justified;
+}
+.highlighted {
+    background-color: red;
+}
