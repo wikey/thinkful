@@ -1,0 +1,48 @@
+.welcome {
+    width: 30%;
+    margin: 0 auto;
+    background-color: red;
+}
+.container {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: green;
+}
+.todoentry {
+    width: 30%;
+    margin: 0 auto;
+    background-color: grey;
+}
+.todos {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: blue;
+}
+.todos li {
+    margin: 10px 0;
+    background-color: white;
+    z-index: -1;
+}
+.todotext {
+    width: 90%;
+    height: 100%;
+    float: left;
+    background: pink;
+}
+
+.todosquare {
+    min-height: 1.1rem;
+    min-width: 1.5rem;
+    padding: 1px;
+    float: right;
+/*    width: 100%;
+    height: 100%;*/
+    z-index: 10;
+    background: grey url("https://openclipart.org/image/2400px/svg_to_png/84289/23493485345.png") no-repeat;
+    background-size: contain;
+}
+body {
+    box-sizing: border-box;
+}
