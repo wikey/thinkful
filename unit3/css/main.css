@@ -17,72 +17,14 @@
     background-color: grey;
 }
 .todos {
-    width: 80%;
+    width: 100%;
     height: 100%;
     margin: 0 auto;
-    background-color: blue;
+    background-color: grey;
 }
-.item {
-    margin: 10px 0;
-    background-color: red;
-    z-index: -1;
-    position: relative;
-}
-.text {
-    width: 80%;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-/*    
-    width: 90%;
-    height: 100%;
-    position: relative;
-    top: 0px;
-    left: 0px;
-*/
-    background: pink;
-}
-.check {
-    width: 10%;
-    height: 2ch;
-/*    width: auto;
-    height: 2ch;
-    background-color: blue;
-    padding: 1px;
-*/
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    z-index: 10;
-/*    background: grey url("https://openclipart.org/image/2400px/svg_to_png/84289/23493485345.png") no-repeat;*/
-}
-/*
-.todos .item p {
-    width: 90%;
-    height: 100%;
-    min-height: 1.1rem;
-    float: left;
-    position: relative;
-    top: 0px;
-    background: pink;
-}
-
-.todos .item img {
-    height: 1.1rem;
-    width: auto;
-    padding: 1px;
-    float: right;
-    position: relative;
-    top: 0px;
-    right: 0px;
-    z-index: 10;
-    background: grey no-repeat;
-    background-size: contain;
-}
-*/
 
 .itembox {
-    width: 60%;
+    width: 85%;
     min-height: 1.5em;
     margin: 5px auto;
     background-color: grey;
@@ -91,7 +33,7 @@
 
 
 .itemleft {
-    width: 90%;
+    width: 95%;
     min-height: 1.5em;
     background-color: red;
     position: absolute;
@@ -102,16 +44,17 @@
 
 .itemright {
     min-height: 1.5em;
-    width: 10%;
+    width: 5%;
     background-color: blue;
     position: absolute;
     top: 0px;
     right: 0px;
+    background: blue url("../img/check.png") no-repeat;
+    background-size: contain;
+    z-index: 10;
 }
 
 
 document {
     box-sizing: border-box;
-}
-body * {
 }
