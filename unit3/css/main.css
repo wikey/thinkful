@@ -11,7 +11,7 @@
     background-color: green;
     position: relative;
 }
-.todoentry {
+#newTodo {
     width: 30%;
     margin: 0 auto;
     background-color: grey;
