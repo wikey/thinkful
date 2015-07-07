@@ -2,11 +2,16 @@ $(function(){
     $("#newTodo").on("keydown",function(){
 	if (event.which == 13){
 	    /*	    console.log("enter pressed");*/
-	    $(".todos").append("<div class=\"itembox\"><div class=\"itemleft\">",$('#newTodo').val(),"</div><div class=\"itemright\"></div></div>");
+	    /*	    $(".todos").append(valueTodo);*/ /*The CSS works for this part but it cannot read the value of the input. All new todos are set as "undefined".*/
+	    $(".todos").append(valueTodo);	    
 	}
 	
     }
 		   );
 })
 
-var valueTodo=$('#newTodo').val();
+var preTodo = "<div class=\"itembox\"><div class=\"itemleft\">"
+var textTodo = $('#newTodo').val();
+/*var textTodo = document.getElementById('newTodo').value;*/
+var postTodo = "</div><div class=\"itemright\"></div></div>"
+var valueTodo = preTodo + textTodo + postTodo
