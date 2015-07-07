@@ -13,6 +13,9 @@ $(function(){
     }
 	
 		    );
-    $
+    $(document).on("click",".itemright",function(){
+	$(this).siblings(".itemleft").css("text-decoration","line-through")
+    }
+	    );
 })
 
