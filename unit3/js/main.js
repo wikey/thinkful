@@ -1,17 +1,18 @@
 $(function(){
+    /*Should take the value of the input field, package some html around it, and add it to the .todos class before clearing the input field.*/
     $("#newTodo").on("keydown",function(){
+	/*we only want the enter key*/
 	if (event.which == 13){
 	    var preTodo = '<div class="itembox"><div class="itemleft">'
 	    var textTodo = $("#newTodo").val();
-	    /*var textTodo = document.getElementById('newTodo').value;*/
 	    var postTodo = '</div><div class="itemright"></div></div>'
-	    var valueTodo = preTodo + textTodo + postTodo
-	    $(".todos").append(valueTodo);	    
-	    /*	    $("#newTodo").find('input:text').val('');*/
+	    $(".todos").append(preTodo + textTodo + postTodo);
+	    /*This clears the value from the input*/
 	    $("#newTodo").val('');
 	}
-	
     }
-		   );
+	
+		    );
+    $
 })
 
