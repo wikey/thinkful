@@ -35,21 +35,35 @@
 .itemleft {
     width: 95%;
     min-height: 1.5em;
-    background-color: red;
     position: absolute;
     top: 0px;
     left: 0px;
     text-align: center;
 }
-
+.undone,
+.check {
+    background-color: red;
+}
+.done,
+.cross {
+    background-color: blue;
+    text-decoration: line-through;
+    color: white;
+}
 .itemright {
     min-height: 1.5em;
     width: 5%;
-    background-color: blue;
     position: absolute;
     top: 0px;
     right: 0px;
-    background: blue url("../img/check.png") no-repeat;
+}
+.check {
+    background: url("../img/check.png") no-repeat;
+    background-size: contain;
+    z-index: 10;
+}
+.cross {
+    background: blue url("../img/cross-mark.png") no-repeat;
     background-size: contain;
     z-index: 10;
 }
