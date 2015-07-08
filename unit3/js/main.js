@@ -3,18 +3,23 @@ $(function(){
     $("#newTodo").on("keydown",function(){
 	/*we only want the enter key*/
 	if (event.which == 13){
-	    var preTodo = '<div class="itembox"><div class="itemleft">'
-	    var textTodo = $("#newTodo").val();
-	    var postTodo = '</div><div class="itemright"></div></div>'
-	    $(".todos").append(preTodo + textTodo + postTodo);
-	    /*This clears the value from the input*/
-	    $("#newTodo").val('');
+	    if ($("#newTodo").val() == false){
+	    }
+	    else {
+		var preTodo = '<div class="itembox undone"><div class="itemleft">'
+		var textTodo = $("#newTodo").val();
+		var postTodo = '</div><div class="itemright check"></div></div>'
+		$(".todos").append(preTodo + textTodo + postTodo);
+		/*This clears the value from the input*/
+		$("#newTodo").val('');
+	    }
 	}
     }
 	
 		    );
     $(document).on("click",".itemright",function(){
-	$(this).siblings(".itemleft").css("text-decoration","line-through")
+	$(this).siblings(".itemleft").toggleClass("undone").toggleClass("done");
+	$(this).toggleClass("check").toggleClass("cross");
     }
 	    );
 })
