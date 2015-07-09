@@ -1,0 +1,43 @@
+.document * {
+    box-sizing: border-box;
+}
+.main {
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    background-color: grey;
+    position: relative;
+    text-aligh: center;
+}
+.main .intro {
+    width: 70%;
+    position: absolute;
+    top: 2%;
+    left: 5%;
+    text-align: justify;
+    color: white;
+}
+.main .button {
+    width: 18%;
+    height: 10%;
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    font-weight: bold;
+    background-color: red;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+.main .button p {
+    height: 2em;
+    padding: 10%;
+}
+.runme {
+    width: 60%;
+    height: 80%;
+    background-color: white;
+    position: absolute;
+    top: 18%;
+    right: 20%;
+}
