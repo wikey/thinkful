@@ -1,13 +1,15 @@
 $(function(){
     $(".button").on("click",function(){
 	/*using .empty() here to prevent flooding the box on subsequent clicks*/
-	$(".runme").empty().append("<p>",fizzBuzz(1,100),"</p>");
+	userInput = parseInt(prompt("Enter a number"));
+	$(".runme").empty().append("<p>",fizzBuzz(1,userInput),"</p>");
 	});
 })
 
-function fizzBuzz(){
+
+function fizzBuzz(start,end){
     var fbvalue = [];
-    for(var i = 1; i <= 100; i++){
+    for(var i = start; i <= end; i++){
 	if(i%3 == 0 && i%5 == 0){
 	    fbvalue.push("fizbuzz")
 	}
