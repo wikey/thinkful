@@ -35,12 +35,12 @@ $(document).ready(function(){
     
     /*--- Guess Post ---*/
     function guessPost(newGuess){
-	$("#count").clear().append("newGuess");
+	$("#count").empty().append("newGuess");
     }
 
     /*--- Guess List Post ---*/
     function guessListPost(newGList){
-	$("#guessList").clear().append(gList.join(", "));
+	$("#guessList").empty().append(newGList.join(", "));
     }
 
     /*--- Function to determine how far away from the secret number a given guess is ---*/
@@ -66,8 +66,8 @@ $(document).ready(function(){
 	}
 	/*Check whether the guess is already in the gList array of previous guesses*/
 	/*If it is a new guess, add it to the array and they update the site*/
-	if(){ 
-	    alert.("You guessed that already!");
+	if(gList.indexOf() >= 0){ 
+	    alert("You guessed that already!");
 	}
 	else { 
 	    gList.push(uGuess);
@@ -119,7 +119,7 @@ $(document).ready(function(){
     $("#guessButton").click(function(){
 	var userInput = $("#userGuess").val();
 	$("#userGuess").clear();
-	if (100 > userInput < 1 || isNaN(userInput){
+	if (100 > userInput < 1 || isNaN(userInput)){
 	    alert("Sorry, your guess needs to be a number between 1 and 100 to play.");
 	}
         else {
