@@ -17,10 +17,10 @@ $(document).ready(function(){
 	$("#userGuess").show();/*Show the user input elements in case a successful game has already completed and they were then hidden*/
 	$("#guessButton").show();
 	$("#feedback").empty().append("Make your Guess!")
-	var secNum = 0; /* clear the secret number variable */
-	var guessCount = 0; /* Clear the number of guesses made in the previous game */
+	secNum = 0; /* clear the secret number variable */
+	guessCount = 0; /* Clear the number of guesses made in the previous game */
     /*	console.log("guessCount " + "is now " + guessCount);*/
-	var gList = []; /* Clear the list of guesses from last game */
+	gList = []; /* Clear the list of guesses from last game */
     /*	console.log("gList " + "is now " + gList);*/
 	guessPost(guessCount); /* Post the cleared guesses count to the site */
 	guessListPost(gList); /* Post the cleared guess list to the site */
