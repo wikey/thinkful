@@ -16,6 +16,7 @@ $(document).ready(function(){
     function newGame(){
 	$("#userGuess").show();/*Show the user input elements in case a successful game has already completed and they were then hidden*/
 	$("#guessButton").show();
+	$("#feedback").empty().append("Make your Guess!")
 	var secNum = 0; /* clear the secret number variable */
 	var guessCount = 0; /* Clear the number of guesses made in the previous game */
     /*	console.log("guessCount " + "is now " + guessCount);*/
@@ -55,6 +56,7 @@ $(document).ready(function(){
 	    alert("Congrats! the secret number was " + secNum)
 	    $("#userGuess").hide(); /*Hide the input form to end the game*/
 	    $("#guessButton").hide();
+	    $("#feedback").empty().append("You won!");
 	    return
 	}
    /*-- Is it your first quess?Classify the first guess: How far off are they? --*/
@@ -92,7 +94,8 @@ $(document).ready(function(){
 	}
     }
 /*--- Event listener for player making a guess ---*/
-    $("#guessButton").on("click",function(){
+    $("#guessButton").on("click",function(e){
+	e.preventDefault(); 
 	var userInput = $("#userGuess").val();
     /*	console.log(userInput);*/
     /*	console.log("Guess button clicked");*/
