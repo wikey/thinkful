@@ -1,0 +1,21 @@
+<!DOCTYPE "html">
+<script>
+    var user = {
+	name: "mr smith",
+	profession: "dandy fella",
+	age: 100000,
+	reset: function(){
+	    for(var prop in user) {
+		if(prop != "reset"){
+		    /*		    console.log(user[prop])*/
+		    user[prop] = undefined
+
+		}
+		
+		
+	    }
+	}
+    }
+
+
+</script>
