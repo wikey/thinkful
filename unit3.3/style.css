@@ -1,0 +1,87 @@
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+.fullwidth {
+    width: 100%;
+    background-color: grey;
+}
+.top {
+    margin-top: 2.5%;
+    height: 15%;
+    maring: 0 0 auto auto;
+    background-color: green;
+}
+.welcome,
+.newgame {
+    border: 2px solid black;
+    height: 80%;
+    text-align: center;
+    margin-top: .5%;
+}
+.welcome {
+    width: 60%;
+    margin-left: 5%;
+    background-color: blue;
+    float: left;
+}
+.welcome p {
+    margin-top: 3%;
+}
+.newgame p {
+    margin-top: 7.7%;
+}
+.newgame {
+    width: 20%;
+    margin-right: 10%;
+    float: right;
+    background-color: green;
+    color: white;
+}
+.newgame:hover {
+    color: green;
+    background-color: red;
+    cursor: pointer;
+}
+.middle {
+    background-color: white;
+}
+.middle,
+.bottom {
+    height: 35%;
+    text-align: center;
+    margin: 0 0 -3% auto;
+    padding-top: 3.75%
+}
+.middle p {
+    margin: 15% 0 0 0;
+}    
+.bottom p {
+    margin: 8% 0 0 0;
+}
+.curE,
+.form,
+.feedback,
+.elements,
+.oldE {
+    float: left;
+    border: 2px solid black;
+    height: 60%;
+}
+.curE,
+.form,
+.feedback {
+    width: 25%; /*82.5*/
+    margin: auto auto 5% 5.99%;
+    background-color: brown;
+}
+.form *{
+    margin-top: 6.5%;
+}
+.elements,
+.oldE {
+    width: 45%; /*75%*/
+    margin: auto auto 5% 3%;
+    background-color: purple;
+}
+
