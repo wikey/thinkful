@@ -33,6 +33,7 @@ function buildLists(){
     pickE();
     for(i in allE){
 	eAbrevList.push(allE[i].abrev);
+    }
 }
 
 
