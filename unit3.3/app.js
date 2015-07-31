@@ -8,6 +8,7 @@
   - Cleanup and combine all the functions
   - Add info about playing the game
   - Auto-focus on the form field on page load
+  - Keep text better contained in the divs
 */
 
 
