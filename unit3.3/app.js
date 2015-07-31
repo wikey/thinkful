@@ -44,6 +44,14 @@ function buildLists(){
 
 $(function(){
     
+	    function listReset(){
+		eAbrevList = [];
+		for(i in allE){
+		    eAbrevList.push(allE[i].abrev);
+		}
+		$(".curE p").append(chosenE.abrev); /* Attach new values to html elements */
+		$(".elements p").empty().append(eAbrevList.join(", "));
+	    }
 
 /* ------------- Setup a new game */
     function newGame(){
@@ -52,8 +60,9 @@ $(function(){
 	eAbrevList = [];
 	$(".feedback p, .curE p, .elements p, .oldE p").empty(); /* should probably change the classes here to be on the <p> elements themselves and change where CSS positioning info */
       	buildLists(); /* Build new values */
-      	$(".curE p").append(chosenE.abrev); /* Attach new values to html elements */
-	$(".elements p").append(eAbrevList.join(", "));
+	listReset();
+/*      	$(".curE p").append(chosenE.abrev); /* Attach new values to html elements */
+/*	$(".elements p").append(eAbrevList.join(", "));*/
     }
 
 /* ------------- Evaluate user guesses */
@@ -69,15 +78,10 @@ $(function(){
 	    $("#guessName").val('').empty();
 	    console.log("running pickE again"+chosenE.abrev);
 	    pickE(); /*run pickE again*/
-	    function listReset(){
-		eAbreveList = [];
-		for(i in allE){
-		    eAbrevList.push(allE[i].abrev);
-		}
-		$("curE p").empty();
-	    }
-/*	    $(".curE p").empty().append(chosenE.abrev);*/
+	    listReset();
+	    /*	    $(".curE p").empty().append(chosenE.abrev);*/
 /*	    $(".elements p").empty().append(allE);	    */
+	    $(".curE p").empty().append(chosenE.abrev);
 	    console.log("chosenE is now "+chosenE.abrev);
 	}
 	else{
