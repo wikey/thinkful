@@ -3,7 +3,8 @@
    ================== */
  
 /* ------------- Global variables */
-var knownUniverse = [["1","H","hydrogen"],["2","He","helium"],["3","Li","Lithium"],["4","Be","Berylium"],["5","B","Boron"],["6","C","Carbon"]];
+/*var knownUniverse = [["1","H","hydrogen"],["2","He","helium"],["3","Li","Lithium"],["4","Be","Berylium"],["5","B","Boron"],["6","C","Carbon"]];*/
+knownUniverse = [["1","H","hydrogen"],["2","He","helium"]];
 var allE = [];
 var chosenE = undefined;
 var knownE = [];
@@ -17,12 +18,7 @@ function element(anArray){
 
 /* ------------- Setup each item for quizzing */
 function pickE(){
-    if(allE.length < 0){
-	alert("You have mastered the elements! Press the 'New Game' button to play again.")
-    }
-    else{
 	chosenE = allE.splice(Math.floor(allE.length * Math.random()), 1)[0]; /*splice returns an array with the selected contents so we need the '[0]' at the end to set the variable to the actual object*/
-    }
 }
 
 function buildLists(){ 
@@ -43,7 +39,8 @@ function buildLists(){
    ================== */
 
 $(function(){
-    
+
+/* ------------- Clear current element and full element list div areas */
 	    function listReset(){
 		eAbrevList = [];
 		for(i in allE){
@@ -77,12 +74,16 @@ $(function(){
 	    $(".oldE p").empty().append(knownE);
 	    $("#guessName").val('').empty();
 	    console.log("running pickE again"+chosenE.abrev);
-	    pickE(); /*run pickE again*/
-	    listReset();
-	    /*	    $(".curE p").empty().append(chosenE.abrev);*/
-/*	    $(".elements p").empty().append(allE);	    */
-	    $(".curE p").empty().append(chosenE.abrev);
-	    console.log("chosenE is now "+chosenE.abrev);
+	    if(allE.length < 1){
+		$(".curE p").empty();
+		alert("You have mastered the elements! Press the 'New Game' button to play again.")
+	    }
+	    else {
+		pickE(); /*run pickE again*/
+		listReset();
+		$(".curE p").empty().append(chosenE.abrev);
+		console.log("chosenE is now "+chosenE.abrev);
+	    }
 	}
 	else{
 	    $(".feedback p").empty().append("Sorry ",userGuess," is not the full name for ",chosenE.abrev); /*update feedback*/
