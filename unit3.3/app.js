@@ -1,10 +1,23 @@
+/* TODOS
+  - implement a "skip" button
+  - better colors
+  - implement other training modes (start with full name or number and guess something else)
+  - leave off comma on final element added do the mastered elements list
+  - make mastered elements a list of the actual elements instead of just the abbreviation string
+      - Does this mean I need a displayname method of the element object to present the "H - Hydrogen" version
+  - Cleanup and combine all the functions
+  - Add info about playing the game
+  - Auto-focus on the form field on page load
+*/
+
+
 /* ================== 
     Global functions
    ================== */
  
 /* ------------- Global variables */
-/*var knownUniverse = [["1","H","hydrogen"],["2","He","helium"],["3","Li","Lithium"],["4","Be","Berylium"],["5","B","Boron"],["6","C","Carbon"]];*/
-knownUniverse = [["1","H","hydrogen"],["2","He","helium"]];
+var knownUniverse = [["1","H","hydrogen"],["2","He","helium"],["3","Li","Lithium"],["4","Be","Beryllium"],["5","B","Boron"],["6","C","Carbon"]];
+/*knownUniverse = [["1","H","hydrogen"],["2","He","helium"]];*/
 var allE = [];
 var chosenE = undefined;
 var knownE = [];
