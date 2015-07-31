@@ -65,7 +65,7 @@ $(function(){
 	if(userGuess.toLowerCase() === chosenE.name.toLowerCase()){
 	    $(".feedback p").empty().append("That is right, ",chosenE.name," is the full name for '",chosenE.abrev,"'");  /*report win*/
 	    knownE.push(chosenE.abrev + " - " + chosenE.name + ", "); /*add chosenE to list of known elements*/
-	    $(".oldE p").append(knownE);
+	    $(".oldE p").empty().append(knownE);
 	    $("#guessName").val('').empty();
 	    console.log("running pickE again"+chosenE.abrev);
 	    pickE(); /*run pickE again*/
@@ -74,6 +74,7 @@ $(function(){
 		for(i in allE){
 		    eAbrevList.push(allE[i].abrev);
 		}
+		$("curE p").empty();
 	    }
 /*	    $(".curE p").empty().append(chosenE.abrev);*/
 /*	    $(".elements p").empty().append(allE);	    */
@@ -81,6 +82,7 @@ $(function(){
 	}
 	else{
 	    $(".feedback p").empty().append("Sorry ",userGuess," is not the full name for ",chosenE.abrev); /*update feedback*/
+	    $("#guessName").val('').empty();
 	}
     });
     
