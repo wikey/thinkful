@@ -2,7 +2,6 @@
   - implement a "skip" button
   - better colors
   - implement other training modes (start with full name or number and guess something else)
-  - leave off comma on final element added do the mastered elements list
   - Cleanup and combine all the functions
   - Add info about playing the game
   - Auto-focus on the form field on page load
@@ -15,12 +14,14 @@
    ================== */
  
 /* ------------- Global variables */
-var knownUniverse = [["1","H","Hydrogen"],["2","He","Helium"],["3","Li","Lithium"],["4","Be","Beryllium"],["5","B","Boron"],["6","C","Carbon"]];
+var knownUniverse = [["1","H","Hydrogen"],["2","He","Helium"],["3","Li","Lithium"],["4","Be","Beryllium"],["5","B","Boron"],["6","C","Carbon"],["7","N","Nitrogen"],["8","O","Oxygen"],["9","F","Fluorine"],["10","Ne","Neon"],["11","Na","Sodium"],["12","Mg","Magnesium"],["13","Al","Aluminium"],["14","Si","Silicon"],["15","P","Phosphorus"],["16","S","Sulfur"],["17","Cl","Chlorine"],["18","Ar","Argon"],["19","K","Potassium"],["20","Ca","Calcium"]];
 /*knownUniverse = [["1","H","Hydrogen"],["2","He","Helium"]];*/
 var allE = [];
 var chosenE = undefined;
 var knownE = [];
 var eAbrevList = [];
+
+
 /* ------------- Convert our array of arrays into an array of objects */
 function element(anArray){ 
     this.num = anArray[0];
