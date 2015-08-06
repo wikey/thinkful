@@ -2,27 +2,35 @@
 *:before {
     box-sizing: border-box;
 }
+html{
+    background-color: #E6CCFF;
+}
+
 .fullwidth {
     width: 100%;
-    background-color: grey;
+/*    background-color: grey;*/
 }
 .top {
     margin-top: 2.5%;
     height: 15%;
     maring: 0 0 auto auto;
-    background-color: green;
+/*    background-color: green;*/
 }
-.welcome,
 .newgame {
     border: 2px solid black;
     height: 80%;
     text-align: center;
     margin-top: .5%;
+    color: #CCFF33;
+    background-color: #33FF66;
 }
 .welcome {
+    height: 80%;
+    text-align: center;
+    margin-top: 0.5%;
     width: 60%;
     margin-left: 5%;
-    background-color: blue;
+/*    background-color: blue;*/
     float: left;
 }
 .welcome p {
@@ -35,7 +43,7 @@
     width: 20%;
     margin-right: 10%;
     float: right;
-    background-color: green;
+    background-color: #33FF66;
     color: white;
 }
 .newgame:hover {
@@ -73,7 +81,7 @@
 .feedback {
     width: 25%; /*82.5*/
     margin: auto auto 5% 5.99%;
-    background-color: brown;
+    background-color: #00B8F5;
 }
 .form *{
     margin-top: 6.5%;
@@ -82,6 +90,9 @@
 .oldE {
     width: 45%; /*75%*/
     margin: auto auto 5% 3%;
-    background-color: purple;
+    background-color: #CCFF33;
 }
 
+.button {
+    height: 1.5rem;
+}
