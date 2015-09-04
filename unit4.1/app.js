@@ -5,7 +5,6 @@ function wikiParse(lesson){
 
 function lessonId(lesson){
     var sideNumber = lesson.answer_columns.length + lesson.prompt_columns.length
-//    console.log(sideNumber);
     $(".lessonInfo").append("<p><strong>Lesson Info</strong><br>" + "Groups: " + lesson.dividers.length + "<br>" + "Cards:" + lesson.cards.length + "<br>" + "Sides per card: " + sideNumber + "</p>");
 }
 
